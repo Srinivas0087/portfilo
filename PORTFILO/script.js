@@ -36,17 +36,19 @@ const projects = [
     cover: "assets/projects/qmusic.png",
     description: "A responsive web music player, deployed live on Netlify.",
     stack: ["HTML", "CSS", "JavaScript"],
-    github: GITHUB_PROFILE + "?tab=repositories",
+    github: "https://github.com/Srinivas0087/Q-Music",
     live: "https://qmusicplayer.netlify.app/",
   },
   {
-    title: "Master Learn",
-    cover: "assets/projects/masterlearn.svg",
-    description: "A learning-focused web application, deployed live on Netlify.",
+    title: "MasterLearn",
+    cover: "assets/projects/master learn.png",
+    description: "A responsive e-learning platform featuring courses, video playlists, student profiles, and authentication pages.",
     stack: ["HTML", "CSS", "JavaScript"],
-    github: GITHUB_PROFILE + "?tab=repositories",
+    github: "https://github.com/Srinivas0087/e-learning-platform",
     live: "https://masterlearn.netlify.app/",
-  },
+},
+
+  
   {
     title: "Object Detection Web App",
     cover: "assets/projects/objdetect.svg",
@@ -113,6 +115,39 @@ function renderProjects() {
   observeReveals();
 }
 moreBtn.addEventListener("click", () => { expanded = !expanded; renderProjects(); });
+
+/* ---------- Live GitHub status ---------- */
+async function loadGitHubStatus() {
+  const statusText = $("#github-profile-status");
+  const setCount = (id, value) => {
+    const el = $("#" + id);
+    if (el) el.textContent = value;
+  };
+
+  try {
+    const [profileResponse, reposResponse] = await Promise.all([
+      fetch("https://api.github.com/users/Srinivas0087", { headers: { Accept: "application/vnd.github+json" } }),
+      fetch("https://api.github.com/users/Srinivas0087/repos?per_page=100&sort=updated", { headers: { Accept: "application/vnd.github+json" } }),
+    ]);
+    if (!profileResponse.ok) throw new Error("GitHub profile request failed");
+
+    const profile = await profileResponse.json();
+    setCount("github-repos", profile.public_repos ?? 0);
+    setCount("github-followers", profile.followers ?? 0);
+    setCount("github-following", profile.following ?? 0);
+
+    let stars = 0;
+    if (reposResponse.ok) {
+      const repos = await reposResponse.json();
+      stars = repos.reduce((total, repo) => total + (repo.stargazers_count || 0), 0);
+    }
+    setCount("github-stars", stars);
+    statusText.textContent = "GitHub profile is active";
+  } catch {
+    statusText.textContent = "View GitHub profile";
+  }
+}
+loadGitHubStatus();
 
 /* ---------- Scroll reveal ---------- */
 let io;

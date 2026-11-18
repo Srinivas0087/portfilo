@@ -532,6 +532,54 @@ p + p {
   max-width: 100%;
   height: auto;
 }
+.github-status {
+  width: 100%;
+  max-width: 780px;
+  text-align: center;
+}
+#github-profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+.github-live-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.12);
+}
+.github-counters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.github-counter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.85rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface-2);
+}
+.github-counter strong {
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+.github-counter span {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+@media (max-width: 520px) {
+  .github-counters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 #gh-calendar {
   width: 100%;
   max-width: 780px;
