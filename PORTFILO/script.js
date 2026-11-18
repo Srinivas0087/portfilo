@@ -33,7 +33,7 @@ const tools = [
 const projects = [
   {
     title: "Qmusic Player",
-    cover: "assets/projects/qmusic.svg",
+    cover: "assets/projects/qmusic.png",
     description: "A responsive web music player, deployed live on Netlify.",
     stack: ["HTML", "CSS", "JavaScript"],
     github: GITHUB_PROFILE + "?tab=repositories",

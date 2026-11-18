@@ -17,7 +17,7 @@
   --text: #0f1530;
   --muted: #5b6478;
   --line: rgba(15, 21, 48, 0.1);
-  --shadow: 0 10px 30px rgba(15, 21, 48, 0.08);
+  --shadow: 0 12px 30px rgba(15, 21, 48, 0.24);
 }
 
 *,
@@ -799,4 +799,11 @@ textarea:focus {
 /* Dark-on-dark brand logos (GitHub, Django, Vercel) inverted in dark mode */
 :root[data-theme="dark"] .chip img.adapt {
   filter: invert(1) brightness(1.1);
+}
+
+:root[data-theme="light"] .chip,
+:root[data-theme="light"] .card,
+:root[data-theme="light"] .github,
+:root[data-theme="light"] .form {
+  box-shadow: var(--shadow);
 }
