@@ -338,6 +338,17 @@ i{
 
 #experience {
   position: relative;
+  height: auto;
+  min-height: 0;
+  padding-bottom: 0;
+}
+
+#experience .about-containers {
+  margin-bottom: 0;
+}
+
+#experience .arrow {
+  bottom: -1.5rem;
 }
 
 .experience-sub-title {
@@ -378,6 +389,7 @@ article .icon {
 
 #projects {
   position: relative;
+  padding-top: 0;
   /* padding-bottom: 580px; */
 }
 
