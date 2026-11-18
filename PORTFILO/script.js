@@ -18,15 +18,15 @@ const techSkills = [
   { name: "Python", icon: "python/python-original.svg" },
   { name: "Django", icon: "django/django-plain.svg", adapt: true },
   { name: "MySQL", icon: "mysql/mysql-original.svg" },
-  { name: "OpenCV", icon: "opencv/opencv-original.svg" },
-  { name: "TensorFlow", icon: "tensorflow/tensorflow-original.svg" },
+  // { name: "OpenCV", icon: "opencv/opencv-original.svg" },
+  // { name: "TensorFlow", icon: "tensorflow/tensorflow-original.svg" },
 ];
 const tools = [
   { name: "Git", icon: "git/git-original.svg" },
   { name: "GitHub", icon: "github/github-original.svg", adapt: true },
   { name: "VS Code", icon: "vscode/vscode-original.svg" },
   { name: "Netlify", icon: "netlify/netlify-original.svg" },
-  { name: "Vercel", icon: "vercel/vercel-original.svg", adapt: true },
+  // { name: "Vercel", icon: "vercel/vercel-original.svg", adapt: true },
 ];
 
 // TODO: replace each `github` value with the exact repository URL, and `cover` with a real screenshot.
