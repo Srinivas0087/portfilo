@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dondadi Srinivas | Frontend &amp; Python Developer</title>
+  <meta name="description" content="Portfolio of Dondadi Srinivas, B.Tech AIML graduate and frontend / Python (Django) developer based in Hyderabad, India." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%236366f1'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Apply saved theme before paint (avoids flash)
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <header id="navbar">
+    <nav class="nav container" aria-label="Main">
+      <a href="#home" class="logo">Srinivas<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/Dondadi-Srinivas-Resume.pdf" target="_blank" rel="noopener" class="nav-resume">Resume</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark / light mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero container">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Dondadi Srinivas</h1>
+        <p class="role">Frontend &amp; Python Developer</p>
+        <p class="intro">
+          B.Tech AIML graduate from Hyderabad who builds responsive web apps with HTML, CSS, JavaScript and Django.
+          I enjoy turning ideas into clean, usable products, from music players to ML-powered object detection.
+        </p>
+        <div class="btn-row">
+          <!-- TODO: replace href with your Google Drive "view" link -->
+          <a class="btn btn-primary" id="view-resume" href="assets/Dondadi-Srinivas-Resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-eye"></i> View Resume</a>
+          <a class="btn btn-outline" href="assets/Dondadi-Srinivas-Resume.pdf" download="Dondadi-Srinivas-Resume.pdf"><i class="fa-solid fa-download"></i> Download Resume</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/Srinivas0087" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/srinivas-dondadi/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:srinivasdondadi0087@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-ring"><img src="assets/profile.jpg" alt="Portrait of Dondadi Srinivas" width="388" height="516" /></div>
+      </div>
+    </section>
+
+    <!-- ABOUT + EDUCATION -->
+    <section id="about" class="section container">
+      <header class="section-head reveal"><p class="eyebrow">Get to know me</p><h2>About Me</h2></header>
+      <div class="about-grid">
+        <div class="reveal">
+          <p>I'm a Bachelor of Technology graduate in Artificial Intelligence and Machine Learning (2026). I started with HTML, CSS and JavaScript, then moved into Python and Django to build full web applications backed by MySQL.</p>
+          <p>During my Web Developer internship at Coders Cave, I built responsive pages, fixed cross-browser issues and deployed with Git and Netlify. My final-year project, an object detection web app, combined Django with YOLOv5, OpenCV and TensorFlow.</p>
+          <p><strong>Looking for:</strong> a Software Engineer / Web Developer role where I can write clean code, solve real problems and keep learning.</p>
+          <ul class="facts">
+            <li><i class="fa-solid fa-location-dot"></i> Hyderabad, India</li>
+            <li><i class="fa-solid fa-briefcase"></i> Web Developer Intern, Coders Cave (Mar – Apr 2024)</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h3 class="sub">Education</h3>
+          <ol class="timeline">
+            <li>
+              <span class="when">Jun 2022 – Aug 2026</span>
+              <h4>B.Tech, Artificial Intelligence &amp; Machine Learning</h4>
+              <p>Sri Indu College of Engineering and Technology · CGPA 6.8</p>
+            </li>
+            <li>
+              <span class="when">Apr 2020 – May 2022</span>
+              <h4>Intermediate (Board of Intermediate Education)</h4>
+              <p>Narayana Junior College · CGPA 7.6</p>
+            </li>
+            <li>
+              <span class="when">Earlier</span>
+              <h4>Secondary School Certificate (SSC)</h4>
+              <p>Completed</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <header class="section-head reveal"><p class="eyebrow">What I work with</p><h2>Skills &amp; Tools</h2></header>
+      <h3 class="sub reveal">Tech Skills</h3>
+      <ul class="chips reveal" id="tech-skills"></ul>
+      <h3 class="sub reveal">Tools</h3>
+      <ul class="chips reveal" id="tools"></ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <header class="section-head reveal"><p class="eyebrow">Selected work</p><h2>Projects</h2></header>
+      <div class="cards" id="project-grid"></div>
+      <div class="center"><button class="btn btn-outline" id="more-btn" hidden>View more</button></div>
+
+      <h3 class="sub reveal github-title">GitHub Activity</h3>
+      <div class="github reveal">
+        <img id="gh-stats" alt="GitHub stats for Srinivas0087" loading="lazy" width="495" height="195"
+             src="https://github-readme-stats.vercel.app/api?username=Srinivas0087&show_icons=true&hide_border=true&bg_color=00000000&title_color=6366f1&icon_color=6366f1&text_color=8b93a7" />
+        <img id="gh-calendar" alt="GitHub contribution calendar for Srinivas0087" loading="lazy"
+             src="https://ghchart.rshah.org/6366f1/Srinivas0087" />
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <header class="section-head reveal"><p class="eyebrow">Get in touch</p><h2>Contact Me</h2></header>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p>Have an opportunity, internship or project in mind? Send me a message and I'll get back to you.</p>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i><a href="mailto:srinivasdondadi0087@gmail.com">srinivasdondadi0087@gmail.com</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="tel:+919030078849">+91 90300 78849</a></li>
+            <li><i class="fa-solid fa-location-dot"></i><span>Hyderabad, India</span></li>
+          </ul>
+          <div class="socials">
+            <a href="https://github.com/Srinivas0087" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/srinivas-dondadi/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <form id="contact-form" class="form reveal" novalidate>
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required minlength="2" /><small class="err" data-for="name"></small></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /><small class="err" data-for="email"></small></div>
+          <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required minlength="3" /><small class="err" data-for="subject"></small></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required minlength="10"></textarea><small class="err" data-for="message"></small></div>
+          <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <p class="status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="socials">
+        <a href="https://github.com/Srinivas0087" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/srinivas-dondadi/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:srinivasdondadi0087@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li><li><a href="#about">About Me</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+      <p>&copy; <span id="year">2026</span> Dondadi Srinivas. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top icon-btn" id="to-top" aria-label="Back to top" hidden><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
