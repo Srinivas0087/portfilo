@@ -50,11 +50,11 @@ const projects = [
 
   
   {
-    title: "Object Detection Web App",
-    cover: "assets/projects/objdetect.svg",
-    description: "Real-time object detection in the browser: upload an image and detect multiple objects with a YOLOv5 model served by Django.",
-    stack: ["Python", "Django", "YOLOv5", "OpenCV", "TensorFlow"],
-    github: GITHUB_PROFILE + "?tab=repositories",
+    title: "PowerSaver",
+    cover: "assets/projects/powersaver.png",
+    description: "A smart power management app that helps users reduce energy consumption and save money.",
+    stack: ["Python", "Django", "React", "Material UI"],
+    github:"https://github.com/Srinivas0087/PowerSaver",
     live: "", // add a deployed URL or a demo video link; the button stays disabled until set
   },
 ];
